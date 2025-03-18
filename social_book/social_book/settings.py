@@ -71,7 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'social_book.wsgi.application'
 
-
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Default Django authentication backend
+]
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
